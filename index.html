@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Box</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 1;
+}
+
+p {
+  margin: 0 0 10px;  
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+	width: 100%;
+	padding: 0 23px;
+
+}
+
+.header__img {
+  display: inline;
+}
+
+.header__inner {
+     margin: 0 auto;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    padding: 47px 0 0 0;
+    max-width: 390px;
+}
+
+.nav {
+    display: contents;
+    font-size: 13px;
+    font-weight: 400;
+    
+}
+
+.nav__link {
+    margin-bottom: 30px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px 53px;
+    border-radius: 4px;
+    
+    border: 1px solid #000;
+    
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav__link:hover {
+    letter-spacing: 0.365em;
+    background-color: #000;
+    color: #fff;
+}
+
+#nav__link-btn {
+    margin-bottom: 30px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px 53px;
+    border-radius: 4px;
+    
+    border: 1px solid #000;
+    
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    transition: .3s;
+}
+
+#nav__link-btn:hover {
+    letter-spacing: 0.365em;
+    background-color: #000;
+    color: #fff;
+}
+
+.nav__link:first-child {
+  margin: 30px 0 30px 0;
+}
+
+/* Конец шапки */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 481px;
+  
+}
+.intro__inner {
+    width: 100%;
+    max-width: 390px;
+    margin: auto;
+    
+    text-align: center;
+}
+
+.intro__title{
+    margin: 0 0 20px;
+    font-size: 50px;
+    color: #000000;
+    font-weight: 200;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.intro__subtitle{
+  margin: 0 0 25px;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+
+  letter-spacing: 0.18em;
+  text-transform: lowercase;
+}
+
+.teh {
+  margin-top: 100px;
+}
+
+#teh__wrapper {
+  margin: 0 auto;
+  max-width: 390px;
+}
+
+.teh__text {
+  text-align: center;
+}
+
+.text__teh {
+  margin-bottom: 52px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  color: #000000;
+}
+
+.block__teh {
+  display: flex;
+  justify-content: space-between;
+}
+
+.teh__block {
+  margin: 0 91px 0 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teh__block:last-child {
+  margin: 0;
+}
+
+.teh__item {
+  
+}
+
+.teh__text-big {
+  margin: 0 0 0 -55px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 200px;
+  color: rgba(16, 16, 16, 0.08);
+}
+
+.subteh__wrapper {
+  text-align: center;
+}
+
+.tehinfo__block {
+  transform: translateY(-40%);
+}
+
+.tehinfo__item {
+
+}
+
+.tehinfo__subtext {
+  margin: -60px 0 0 0;
+  width: 250px;
+  font-weight: 200;
+  letter-spacing: 0.18em;
+  text-transform: lowercase;
+  font-size: 19px;
+  color: #000000;
+}
+
+.block__teh-right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.teh__block-right {
+  margin: 0 91px 0 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teh__block-right:last-child {
+  margin: 0;
+}
+
+.teh__item-right {
+  
+}
+
+.teh__text-big-right {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 200px;
+  color: rgba(16, 16, 16, 0.08);
+}
+
+.subteh__wrapper-right {
+  text-align: center;
+}
+
+.tehinfo__block-right {
+  transform: translateY(-40%);
+}
+
+.tehinfo__item-right {
+
+}
+
+.tehinfo__subtext-right {
+  margin: -70px 0 0 0;
+  width: 250px;
+  font-weight: 200;
+  letter-spacing: 0.18em;
+  text-transform: lowercase;
+  font-size: 19px;
+  text-align: end;
+  color: #000000;
+}
+
+.block__teh-center {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.teh__block-center {
+  margin: 0 91px 0 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teh__block-center:last-child {
+  margin: 0;
+}
+
+.teh__item-center {
+  
+}
+
+.teh__text-big-center {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 200px;
+  color: rgba(16, 16, 16, 0.08);
+}
+
+.subteh__wrapper-center {
+  text-align: center;
+}
+
+.tehinfo__block-center {
+  transform: translateY(-30%);
+}
+
+.tehinfo__item-center {
+
+}
+
+.tehinfo__subtext-center {
+  text-align: center;
+  margin: -50px 0 0 0;
+  width: 343px;
+  height: 196px;
+  font-weight: 200;
+  letter-spacing: 0.18em;
+  text-transform: lowercase;
+  font-size: 19px;
+  color: #000000;
+}
+
+	</style>
+</head>
+<body>
+<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__img">
+					<svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3.17 7.44L12 12.55L20.77 7.47M12 21.61V12.54" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M9.93 2.48L4.59 5.44C3.38 6.11 2.39 7.79 2.39 9.17V14.82C2.39 16.2 3.38 17.88 4.59 18.55L9.93 21.52C11.07 22.15 12.94 22.15 14.08 21.52L19.42 18.55C20.63 17.88 21.62 16.2 21.62 14.82V9.17C21.62 7.79 20.63 6.11 19.42 5.44L14.08 2.47C12.93 1.84 11.07 1.84 9.93 2.48V2.48Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</div>
+				<nav class="nav">
+    					<a class="nav__link" href="#">Что за сайт?</a>
+    					<a class="nav__link" href="#">Контакти</a>
+   					<a class="nav__link" href="#">Помощь</a>
+    			</nav>
+ 	 		</div>
+		</div>
+</header><!-- Конец шапки -->
+<section class="teh">
+	<div class="container">
+		<div id="teh__wrapper">
+			<div class="teh__text">
+				<h1 class="intro__title">
+				Про сайт
+				</h1>
+				<p class="intro__subtitle">
+					Описание сайта 
+				</p>
+			</div>
+					<div class="block__teh">
+						<div class="teh__block">
+						<div class="teh__item">
+							<h1 class="teh__text-big">01</h1>
+							<div class="tehinfo__block">
+                    <div class="tehinfo__item">
+												<p class="tehinfo__subtext">
+             						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit neque, non optio itaque autem officia.
+												</p>
+										</div>
+								</div>
+						</div>          			
+					</div>
+					</div>
+					<div class="block__teh-right">
+						<div class="teh__block-right">
+						<div class="teh__item-right">
+							<h1 class="teh__text-big-right">02</h1>
+							<div class="tehinfo__block-right">
+                    <div class="tehinfo__item-right">
+												<p class="tehinfo__subtext-right">
+             						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit neque, non optio itaque autem officia.
+												</p>
+										</div>
+								</div>
+						</div>          			
+					</div>
+					</div>
+					<div class="block__teh-center">
+						<div class="teh__block-center">
+						<div class="teh__item-center">
+							<h1 class="teh__text-big-center">03</h1>
+							<div class="tehinfo__block-center">
+                    <div class="tehinfo__item-center">
+												<p class="tehinfo__subtext-center">
+             						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit neque, non optio itaque autem officia.
+												</p>
+										</div>
+								</div>
+						</div>          			
+					</div>
+					</div>
+		</div>	
+	</div>
+</section>
+</body>
+</html>
